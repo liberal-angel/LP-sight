@@ -71,8 +71,13 @@ nav a:not(:last-child) {
 }
 
 .second-view {
-  width: 45%;
+  width: 100%;
   margin: 50px auto;
+}
+
+.second-block {
+  width: 50%;
+  margin: auto;
 }
 
 .second-view-title1 {
@@ -95,20 +100,27 @@ nav a:not(:last-child) {
   border-bottom: rgb(200, 200, 200) solid 2px;
 }
 
-.second-view-news div {
+.second-view-list {
+  width: 80%;
+  margin: auto;
+}
+
+.second-view-item {
   text-align: center;
   padding: 10px;
-}
-
-.second-view-news div:not(:first-child) {
-  margin-top: 20px;
-}
-
-.second-view-news div {
+  list-style: none;
   border-bottom: rgb(200, 200, 200) solid 1px;
 }
 
-.second-view-news span a {
+.second-view-item:not(:first-child) {
+  margin-top: 20px;
+}
+
+.list-txt {
+  font-size: 15px;
+}
+
+.second-link-box a {
   font-weight: bold;
   color: white;
   background-color: rgb(193, 86, 122);
@@ -120,7 +132,7 @@ nav a:not(:last-child) {
 
 .third-view {
   background-color: rgba(246, 246, 246, 0.821);
-  padding: 10px 0;
+  padding: 0 200px;
 }
 
 .third-view-title {
@@ -135,8 +147,10 @@ nav a:not(:last-child) {
 }
 
 .third-view-text {
-  padding: 30px;
+  display: flex;
+  justify-content: left;
   margin: auto 0;
+  padding: 30px 30px 30px 0;
 }
 
 .third-view-text p {
@@ -159,8 +173,8 @@ nav a:not(:last-child) {
 }
 
 .forth-view {
-  width: 70%;
   margin: 50px auto;
+  padding: 20px 200px;
 }
 
 .forth-view-text p {
@@ -231,13 +245,13 @@ nav a:not(:last-child) {
 }
 
 .blog {
-  padding: 50px;
+  padding: 20px 150px;
   background-color: rgba(230, 230, 230);
 }
 
 .blog-title {
   margin: 0 auto;
-  width: 85%;
+  padding: 0 50px;
 }
 
 .blog .blog-title h2 {
@@ -254,8 +268,7 @@ nav a:not(:last-child) {
 .blog-card-view {
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
-  padding: 0 70px;
+  padding: 20px 0;
 }
 
 .blog-card {
