@@ -83,7 +83,6 @@ nav a:not(:last-child) {
 .second-view-title1 {
   font-family: 'Gorditas', cursive;
   color: rgb(193, 86, 122);
-  margin-left: 30px;
 }
 
 .second-view-title2 {
@@ -91,7 +90,6 @@ nav a:not(:last-child) {
   font-weight: bold;
   font-size: 25px;
   margin-top: 20px;
-  margin-left: 30px;
 }
 
 .second-view-news {
@@ -101,13 +99,11 @@ nav a:not(:last-child) {
 }
 
 .second-view-list {
-  width: 80%;
   margin: auto;
 }
 
 .second-view-item {
-  text-align: center;
-  padding: 10px;
+  padding: 10px 10px 10px 0;
   list-style: none;
   border-bottom: rgb(200, 200, 200) solid 1px;
 }
