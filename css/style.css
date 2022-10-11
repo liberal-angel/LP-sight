@@ -1,3 +1,5 @@
+/* LP-sightは画面右の幅への余白に注意が必要！！ */
+
 body {
   width: 100%;
   margin: 0 auto;
@@ -200,74 +202,115 @@ nav a:not(:last-child) {
 
 .forth-view {
   margin: 50px auto;
-  width: 70%;
+  width: 100%;
   padding: 20px 0;
 }
 
-.forth-view-text p {
+.forth-view-ttl {
+  width: 70%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.forth-view-ttl1 {
   font-family: 'Gorditas', cursive;
   color: rgb(193, 86, 122);
 }
 
-.forth-view-text h3 {
-  color: rgb(187, 187, 187);
-  font-size: 20px;
+.forth-view-ttl2 {
+  color: rgb(150, 150, 150);
+  font-size: 25px;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .forth-view-glid {
   display: grid;
-  margin-top: 20px;
-  grid-template-rows: 200px 200px;
+  width: 70%;
+  margin: 20px auto 0 auto;
+  grid-template-rows: 180px 180px;
   grid-template-columns: 1fr 1fr;
 }
 
 .box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   grid-column: 1/2;
   grid-row: 1/3;
-  background-color: rgb(248, 73, 239);
+  background-color: rgb(203, 20, 179);
+}
+
+.box1-block {
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.box1-img {
+  width: 30%;
+  margin: 15px auto;
+}
+
+.box1-txt-area {
+  width: 80%;
+  margin: auto;
+}
+
+.box1-txt1 {
+  margin: 15px 0;
+}
+
+.box1-txt1,
+.box1-txt2 {
+  color: white;
+  text-align: center;
 }
 
 .box2 {
   grid-column: 2/3;
   grid-row: 1/2;
-  background-color: rgb(212, 38, 203);
+  background-color: rgb(223, 86, 216);
 }
 
 .box3 {
   grid-column: 2/3;
   grid-row: 2/3;
-  background-color: rgb(180, 20, 172);
+  background-color: rgb(251, 139, 245);
 }
 
-.forth-view-glid div {
+.box2-block,
+.box3-block {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+  width: 100%;
+  margin: auto;
+  padding: 10px 0;
+  box-sizing: border-box;
 }
 
-.forth-view-glid div:first-child img {
-  width: 35%;
-  margin: 30px auto;
+.box2-img,
+.box3-img {
+  width: 30%;
 }
 
-.forth-view-glid div:not(:first-child) img {
-  width: 20%;
-  margin: 10px auto;
+.box2-txt-area,
+.box3-txt-area {
+  width: 50%;
+  margin: auto 0;
 }
 
-.forth-view-glid div:first-child h2,
-.forth-view-glid div:first-child p {
-  font-size: 18px;
-  margin: 10px 50px;
-  text-align: center;
+.box2-txt1,
+.box3-txt1 {
+  margin: 15px auto;
 }
 
-.forth-view-glid div:not(:first-child) h2,
-.forth-view-glid div:not(:first-child) p {
-  font-size: 14px;
-  margin: 5px 70px;
+.box2-txt1,
+.box2-txt2,
+.box3-txt1,
+.box3-txt2 {
+  color: white;
   text-align: center;
 }
 
@@ -281,6 +324,12 @@ nav a:not(:last-child) {
   margin: auto;
 }
 
+@media screen and (max-width:468px) {
+  .blog-box {
+    width: 50%;
+  }
+}
+
 .blog-ttl-txt1 {
   font-family: 'Gorditas', cursive;
   color: rgb(193, 86, 122);
@@ -289,7 +338,7 @@ nav a:not(:last-child) {
 .blog-ttl-txt2 {
   font-size: 30px;
   font-weight: bold;
-  color: rgb(187, 187, 187);
+  color: rgb(150, 150, 150);
   margin-top: 20px;
 }
 
@@ -343,6 +392,7 @@ nav a:not(:last-child) {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 @media screen and (max-width:1000px) {
